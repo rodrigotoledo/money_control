@@ -1,0 +1,19 @@
+<div class="card mt-3" id="<%= dom_id account %>">
+  <div class="card-body">
+    <h5 class="card-title"><%= account.bank_name %> - <%=link_to account %></h5>
+    <p class="card-text">
+      <p>
+        <strong>Account:</strong>
+        <%= account.account %>
+      </p>
+
+      <p>
+        <strong>Digit:</strong>
+        <%= account.digit %>
+      </p>
+    </p>
+  </div>
+  <div class="card-footer">
+    <%= number_to_currency account.account_moviments.sum(:amount) %>
+  </div>
+</div>

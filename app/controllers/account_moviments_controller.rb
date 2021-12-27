@@ -1,0 +1,2 @@
+class AccountMovimentsController < ApplicationController
+end
