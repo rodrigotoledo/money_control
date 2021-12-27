@@ -64,3 +64,6 @@ group :development do
   # gem "spring"
 end
 
+gem "stimulus_reflex", "= 3.5.0.pre8"
+gem "cable_ready", "5.0.0.pre8"
+gem "bootstrap_form", "~> 5.0"

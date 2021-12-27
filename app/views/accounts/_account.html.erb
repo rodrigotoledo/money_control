@@ -15,5 +15,7 @@
   </div>
   <div class="card-footer">
     <%= number_to_currency account.account_moviments.sum(:amount) %>
+    <hr>
+    <%= link_to "Edit", "javascript:;", data: { reflex: "click->AccountReflex#edit", id: account.id, controller: 'account' }, class: 'btn btn-primary' %>
   </div>
 </div>
